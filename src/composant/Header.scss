@@ -1,11 +1,10 @@
-// Header.scss
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  
+  padding: 2rem 3rem 1rem 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 
   .logo {
     img {
@@ -17,17 +16,16 @@
   .nav-links {
     ul {
       list-style: none;
-      padding: 0;
-      margin: 0;
       display: flex;
       margin-left: auto;
 
       li {
-        margin-left: 20px;
+        margin-left: 40px;
 
         a {
           text-decoration: none;
           font-weight: bold;
+            color: #FF6060;
 
           &:hover {
             text-decoration: underline;
