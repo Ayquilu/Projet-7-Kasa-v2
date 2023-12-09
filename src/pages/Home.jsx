@@ -1,35 +1,13 @@
 import React from "react";
 import "./Home.scss";
-import Banner from "../composant/Home-banner.jsx";
+import HomeBanner from "../composant/Home-banner.jsx";
+import CardContainer from "../composant/Card-Container.jsx";
 
 function Home() {
   return (
     <>
-      <Banner />
-
-      <div className="Card_container">
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-      </div>
+      <HomeBanner />
+      <CardContainer />
     </>
   );
 }
