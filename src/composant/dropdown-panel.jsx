@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./dropdown-panel.scss";
 import arrow from "../Assets/Fleche-Dropdown.png";
 
 function DropdownPanel() {
+
+  const [isBottomOpen, setBottomOpen] = useState(false);
+
+  const toggleBottom = () => {
+    setBottomOpen(!isBottomOpen);
+  };
+
   return (
-    <div className="dropdown_panel">
-      <button className="dropdown_panel_top">
+    <div className={`dropdown_panel ${isBottomOpen ? "open" : ""}`}>
+      <button
+        type="button"
+        className="dropdown_panel_top"
+        onClick={toggleBottom}
+      >
         <span>titre</span>
-        <img src={arrow} alt="arrow" />
+        <img
+          className={`arrow ${isBottomOpen ? "up" : "down"}`}
+          src={arrow}
+          alt="arrow"
+        />
       </button>
 
       <div className="dropdown_panel_bottom">
@@ -16,4 +31,5 @@ function DropdownPanel() {
     </div>
   );
 }
+
 export default DropdownPanel;
