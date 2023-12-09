@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Apartment from "./pages/Apartment";
 import Header from "./composant/Header";
 import Footer from "./composant/Footer";
+import Error from "./pages/Error";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Apartment" element={<Apartment />} />
         <Route path="/About" element={<About />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,17 @@
+.error {
+  font-family: "Montserrat", sans-serif;
+  min-height: calc(100vh - 23rem);
+  color: #ff6060;
+  text-align: center;
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  a {
+    color: #ff6060;
+  }
+}
