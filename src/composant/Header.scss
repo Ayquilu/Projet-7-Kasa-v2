@@ -1,0 +1,39 @@
+// Header.scss
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+
+  .logo {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .nav-links {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      margin-left: auto;
+
+      li {
+        margin-left: 20px;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
