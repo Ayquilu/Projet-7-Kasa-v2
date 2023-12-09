@@ -1,12 +1,14 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./Card.scss";
 
-function Card () {
+function Card ({accommodation}) {
+    const {id, cover, title} = accommodation;
     return (
-      <div className="card">
-        <img src="https://picsum.photos/200/300" alt="random" />
-        <h2>appartement super cool</h2>
-      </div>
+        <Link to={`/accommodation/${id}`} className="card">
+            <img src={cover} alt={title} />
+            <h2>{title}</h2>
+        </Link>
     );
     
 }

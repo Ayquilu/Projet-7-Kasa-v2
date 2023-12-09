@@ -1,7 +1,7 @@
 import React from 'react';
-import './Apartment.scss';
+import './Accommodation.scss';
 
-function Apartment() {
+function Accommodation() {
     return (
         <div className="apartment">
         <h1>Apartment</h1>
@@ -9,4 +9,4 @@ function Apartment() {
     );
     }
 
-export default Apartment;
+export default Accommodation;
