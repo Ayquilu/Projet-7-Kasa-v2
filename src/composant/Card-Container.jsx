@@ -1,31 +1,18 @@
 import React from "react";
 import "./Card-Container.scss";
+import Card from "./Card";
 
 function CardContainer() {
   return (
-    <div className="Card_container">
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-        <div className="Card">
-          appartement super cool
-        </div>
-      </div>
+    <div className="card-container">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      
+    </div>
   );
 }
 
