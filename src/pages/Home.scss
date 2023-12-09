@@ -1,27 +1,18 @@
-.banner {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  background: url(../Assets/Home-Banner.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 5rem;
-  border-radius: 2rem;
-  color: #ffffff;
-    margin: 2rem;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-  }
-  h2 {
-    position: relative;
-    z-index: 1;
-  }
+.Card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; 
+    padding: 2rem;
+}
+
+.Card {
+  flex: 1;
+  min-width: 13rem; 
+    max-width: auto;
+  height: 12rem;
+  background-color: #FF6060;
+  padding: 16px; 
+  border-radius: 1rem ;
+  margin-bottom: 16px; 
 }
