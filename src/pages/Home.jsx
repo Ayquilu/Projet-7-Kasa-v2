@@ -3,8 +3,8 @@ import "./Home.scss";
 
 function Home() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="banner">
+      <h2>Chez vous, partout et ailleurs</h2>
     </div>
   );
 }
