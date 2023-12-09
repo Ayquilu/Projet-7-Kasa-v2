@@ -1,1 +1,16 @@
+.card_container {
+  background-color: #F6F6F6 ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem; 
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
 
+    @media screen and (max-width: 768px) {
+    background-color: transparent;
+    padding: 0rem;
+    margin: 1rem;
+      
+    }
+}
