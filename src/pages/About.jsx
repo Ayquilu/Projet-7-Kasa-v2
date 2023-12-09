@@ -1,11 +1,12 @@
 import React from 'react';
 import './About.scss';
+import AboutBanner from "../composant/About-Banner.jsx";
 
 function About() {
   return (
-    <div className="about">
-      <h1>About</h1>
-    </div>
+    <>
+      <AboutBanner />
+   </>
   );
 }
 
