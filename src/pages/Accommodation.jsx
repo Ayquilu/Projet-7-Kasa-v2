@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import accommodationData from "../Assets/AccommodationData.js";
 import DropdownPanel from "../composant/dropdown-panel.jsx";
+import Rating from "../composant/Rating.jsx";
 import "./Accommodation.scss";
 import Carousel from "../composant/Carousel.jsx";
 
@@ -47,7 +48,7 @@ function Accommodation() {
               <img src={picture} alt={name} />
             </div>
           </div>
-          <p>Rating: {rating}</p>
+          <Rating rateValue={Number(rating)} />
         </div>
       </div>
       <div className="Accommodation_Panel">
