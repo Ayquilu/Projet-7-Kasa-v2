@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import accommodationData from "../Assets/AccommodationData.js";
 import DropdownPanel from "../composant/dropdown-panel.jsx";
 import "./Accommodation.scss";
@@ -10,6 +11,10 @@ function Accommodation() {
   const accommodation = accommodationData.find(
     (accommodation) => accommodation.id === id
   );
+
+   if (!accommodation) {
+     return <Navigate to="/error" />;
+   }
 
   const {
     title,
