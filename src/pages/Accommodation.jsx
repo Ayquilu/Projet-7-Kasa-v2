@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import accommodationData from "../Assets/AccommodationData.js";
 import DropdownPanel from "../composant/dropdown-panel.jsx";
 import "./Accommodation.scss";
+import Carousel from "../composant/Carousel.jsx";
 
 function Accommodation() {
   const { id } = useParams();
@@ -12,7 +13,7 @@ function Accommodation() {
 
   const {
     title,
-    cover,
+    pictures,
     description,
     host,
     rating,
@@ -23,7 +24,7 @@ function Accommodation() {
 
   return (
     <div className="accommodation">
-      <img src={cover} alt={title} />
+      <Carousel images={pictures} />
       <h1>{title}</h1>
       <p>Host: {host.name}</p>
       <p>Rating: {rating}</p>
