@@ -1,3 +1,13 @@
 .page{
-    min-height: calc(100vh - 18rem);
+    min-height: calc(100vh - 15%);
+}
+
+.About_Panel {
+    padding-inline: 7rem;
+
+    @media screen and (max-width: 768px) {
+        padding-inline: 1rem;
+        
+    }
+   
 }

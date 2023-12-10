@@ -1,7 +1,8 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import accommodationData from '../Assets/AccommodationData.js';
-import './Accommodation.scss';
+import React from "react";
+import { useParams } from "react-router-dom";
+import accommodationData from "../Assets/AccommodationData.js";
+import DropdownPanel from "../composant/dropdown-panel.jsx";
+import "./Accommodation.scss";
 
 function Accommodation() {
   const { id } = useParams();
@@ -21,22 +22,26 @@ function Accommodation() {
   } = accommodation;
 
   return (
-    <div>
+    <div className="accommodation">
       <img src={cover} alt={title} />
       <h1>{title}</h1>
-      <p>{description}</p>
       <p>Host: {host.name}</p>
       <p>Rating: {rating}</p>
       <p>Location: {location}</p>
-      <ul>
-        {equipments.map((equipment, index) => (
-          <li key={index}>{equipment}</li>
-        ))}
-      </ul>
       <p>Tags: {tags.join(", ")}</p>
+      <div className="Accommodation_Panel">
+        <DropdownPanel titre="Description" texte={description} />
+        <DropdownPanel
+          titre="Equipements"
+          texte=<ul>
+            {equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        />
+      </div>
     </div>
   );
 }
-
 
 export default Accommodation;

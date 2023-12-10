@@ -1,11 +1,7 @@
 .dropdown_panel {
-margin-bottom: 2rem;
-  margin-inline: 7rem;
+  margin-bottom: 2rem;
+  flex-basis: 100%;
   font-family: 'Montserrat', sans-serif;
-
-  @media screen and (max-width: 768px) {
-    margin-inline: 1rem;
-  }
 
   .dropdown_panel_top {
     display: flex;
