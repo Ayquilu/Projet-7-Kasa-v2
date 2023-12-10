@@ -14,13 +14,9 @@ const App = () => {
       <Header />
 
       <Routes>
+        <Route path="/" element={<Home />} />
 
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route path="/accommmodation/:id" element={<Accommodation />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
 
         <Route path="/About" element={<About />} />
 
@@ -28,7 +24,6 @@ const App = () => {
       </Routes>
 
       <Footer />
-
     </BrowserRouter>
   );
 };
