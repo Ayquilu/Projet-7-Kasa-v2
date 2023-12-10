@@ -26,7 +26,7 @@ function DropdownPanel(props) {
       </button>
 
       <div className="dropdown_panel_bottom">
-        <p>{props.texte}</p>
+        <div className="texte">{props.texte}</div>
       </div>
     </div>
   );
