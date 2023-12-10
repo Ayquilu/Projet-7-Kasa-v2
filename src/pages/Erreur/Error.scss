@@ -1,7 +1,13 @@
+@import "../../../src/styles/variables.scss";
+
+body {
+  margin: 0;
+}
 .error {
-  font-family: "Montserrat", sans-serif;
+
+  font-family: $kasa-font;
   min-height: calc(100vh - 23rem);
-  color: #ff6060;
+  color: $kasa-red;
   text-align: center;
   h1 {
     font-size: 10rem;
@@ -12,6 +18,6 @@
     font-weight: 500;
   }
   a {
-    color: #ff6060;
+    color: $kasa-red;
   }
 }

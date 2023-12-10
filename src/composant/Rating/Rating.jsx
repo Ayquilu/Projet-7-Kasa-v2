@@ -1,7 +1,7 @@
 import React from "react";
 import "./Rating.scss";
-import Etoile from "../Assets/Etoile.png";
-import EtoileActive from "../Assets/Etoile-active.png";
+import Etoile from "../../Assets/Etoile.png";
+import EtoileActive from "../../Assets/Etoile-active.png";
 import PropTypes from "prop-types";
 
 function Rating({ rateValue }) {

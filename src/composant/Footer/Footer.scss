@@ -1,7 +1,9 @@
+@import "../../../src/styles/variables.scss";
+
 .footer {
-  font-family: "Montserrat", sans-serif;
-  background-color: #000000;
-  color: #ffffff;
+  font-family: $kasa-font;
+  background-color: $kasa-black;
+  color: $kasa-white ;
   padding-top: 2rem;
   padding-bottom: 1rem;
   text-align: center;

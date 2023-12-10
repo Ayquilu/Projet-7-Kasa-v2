@@ -1,11 +1,13 @@
+@import "../../../src/styles/variables.scss";
+
 .card {
     margin: auto;
     width: 340px;
     height: 340px;
   position: relative;
   border-radius: 1rem;
-  color: #FFFFFF; 
-  font-family: "Montserrat", sans-serif;
+  color: $kasa-white; 
+  font-family: $kasa-font;
   overflow: hidden;
 
   @media screen and (max-width: 768px) {

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.scss";
-import HomeBanner from "../composant/Home-banner.jsx";
-import Card from "../composant/Card.jsx";
-import accommodationData from "../Assets/AccommodationData.js";
+import HomeBanner from "../../composant/Home-banner/Home-banner.jsx";
+import Card from "../../composant/Card/Card.jsx";
+import accommodationData from "../../Assets/AccommodationData.js";
 
 
 

@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
-import accommodationData from "../Assets/AccommodationData.js";
-import DropdownPanel from "../composant/dropdown-panel.jsx";
-import Rating from "../composant/Rating.jsx";
+import accommodationData from "../../Assets/AccommodationData.js";
+import DropdownPanel from "../../composant/dropdown-panel/dropdown-panel.jsx";
+import Rating from "../../composant/Rating/Rating.jsx";
 import "./Accommodation.scss";
-import Carousel from "../composant/Carousel.jsx";
+import Carousel from "../../composant/Carousel/Carousel.jsx";
 
 function Accommodation() {
   const { id } = useParams();
@@ -13,9 +13,9 @@ function Accommodation() {
     (accommodation) => accommodation.id === id
   );
 
-   if (!accommodation) {
-     return <Navigate to="/error" />;
-   }
+  if (!accommodation) {
+    return <Navigate to="/error" />;
+  }
 
   const {
     title,

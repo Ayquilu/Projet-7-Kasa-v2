@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./dropdown-panel.scss";
-import arrow from "../Assets/Fleche-Dropdown.png";
+import arrow from "../../Assets/Fleche-Dropdown.png";
 
 function DropdownPanel(props) {
 

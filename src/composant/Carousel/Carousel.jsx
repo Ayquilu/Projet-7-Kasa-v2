@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Carousel.scss";
-import FlecheGauche from "../Assets/Fleche-carrousel-gauche.png";
-import FlecheDroite from "../Assets/Fleche-carrousel-droite.png";
+import FlecheGauche from "../../Assets/Fleche-carrousel-gauche.png";
+import FlecheDroite from "../../Assets/Fleche-carrousel-droite.png";
 
 function Carousel({ images }) {
   const [currentImage, setCurrentImage] = useState(0);

@@ -1,13 +1,15 @@
+@import "../../../src/styles/variables.scss";
+
 .banner {
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  background: url(../Assets/Home-Banner.png);
+  font-family: $kasa-font ;
+  background: url(../../Assets/Home-Banner.png);
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 5rem;
   border-radius: 2rem;
-  color: #ffffff;
+  color: $kasa-white;
   margin: 2rem;
 
   @media screen and (max-width: 768px) {

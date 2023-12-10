@@ -1,4 +1,4 @@
-import LogoBlack from "../Assets/Logo-black.png";
+import LogoBlack from "../../Assets/Logo-black.png";
 
 import React, { useEffect, useState } from "react";
 import "./Footer.scss";
