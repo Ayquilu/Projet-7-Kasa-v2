@@ -10,6 +10,19 @@
   font-family: $kasa-font;
   overflow: hidden;
 
+  @media screen and (max-width: 1243px){
+    width: 450px;
+  }
+    
+  @media screen and (max-width: 1074px) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 855px) {
+    width: 100%;
+    
+  }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     
